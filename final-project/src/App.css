@@ -1,0 +1,291 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #FFFDFA;
+  color: #403F3E;
+}
+
+main {
+  font-family: monospace;
+}
+
+.app-header-container {
+  display: flex;
+  justify-content: center;
+}
+.app-header {
+  font-size: 52px;
+}
+
+/* Home Page */
+.home-page {
+ display: flex;
+ justify-content: space-between;
+ margin: 0 20px;
+ margin-bottom: 60px;
+}
+
+/* To-Do List */
+.todo {
+  border: 5px solid #403F3E;
+  border-radius: 30px;
+  width: 1000px;
+  height: 590px;
+  margin: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-todo {
+  font-size: 48px;
+  margin: 25px 48px;
+}
+
+.todo-container {
+  margin: 10px 50px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  border: 3px solid #403F3E;
+  border-radius: 10px 0 0 10px;
+  background: transparent;
+  height: 38px;
+  font-family: monospace;
+  color: #403F3E;
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+
+.add-button {
+  background-color: #403F3E;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 16px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: #FFFDFA;
+  cursor: pointer;
+}
+
+.todo-list {
+  max-height: 360px;
+  margin-top: 20px;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.todo-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #eceae8;
+  color: #403F3E;
+  font-size: 1.1rem;
+  height: 38px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+span {
+  flex: 1;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: unset;
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.remove-button {
+  background: transparent;
+  border: 0;
+  color: #FF7369;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/* Pomodoro Timer */
+.pomodoro {
+  border: 5px solid #403F3E;
+  border-radius: 30px;
+  width: 350px;
+  height: 590px;
+  margin: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.header-pomodoro {
+  font-size: 48px;
+  align-self: center;
+  margin-top: 36px;
+  margin-bottom: 30px;
+}
+
+.progress-container {
+  max-width: 250px;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.play-button,
+.pause-button {
+  background-color: transparent;
+  color: #403F3E;
+  border: 0;
+  width: 90px;
+  cursor: pointer;
+}
+
+.settings-button,
+.toggle-button,
+.settings-button-container {
+  background-color: #403F3E;
+  border: 0;
+  border-radius: 30px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: #FFFDFA;
+  cursor: pointer;
+}
+
+.toggle-button-container,
+.settings-button-container {
+  margin-bottom: 10px;
+}
+
+.settings-button {
+  padding: 12px 24px;
+  width: auto;
+}
+
+.toggle-button {
+  padding: 10px 26px;
+  width: auto;
+}
+
+.settings-button {
+  padding: 10px 16px;
+  width: auto;
+}
+
+/* Settings Page */
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #403F3E;
+  border-radius: 30px;
+  margin: auto;
+  margin-bottom: 80px;
+  width: 450px;
+}
+
+.header {
+  font-size: 48px;
+  align-self: flex-start;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  margin-left: 70px;
+}
+
+.label-timer {
+  font-size: 18px;
+  align-self: flex-start;
+  margin-left: 70px;
+}
+
+.slider {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 350px;
+  border: 5px solid #403F3E;
+  border-radius: 30px;
+}
+
+.thumb {
+  background-color: #403F3E;
+  cursor: grab;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.track {
+  position: relative;
+  height: 100%;
+  background-color: #403F3E;
+  transition: width 0.3s ease;
+  border-radius: 30px;
+}
+
+.track.fill {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: transparent;
+}
+
+.back-button {
+  background-color: transparent;
+  color: #403F3E;
+  border: 0;
+  width: 75px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 310px;
+  cursor: pointer;
+}
+
+@media (max-width: 1510px) {
+  .home-page {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .pomodoro {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .todo {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .todo-list {
+    max-height: 1000px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 20px;
+  }
+
+}
